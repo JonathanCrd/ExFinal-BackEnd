@@ -5,7 +5,7 @@ const jwt = require('jsonwebtoken')
 // const config = require('../config.js')
 
 if(process.env.NODE_ENV === 'production'){
-  var SECRET = process.env.DB_CONNECTION_STRING;
+  var SECRET = process.env.SECRET;
 }
 else{
   const config = require('../config.js')
